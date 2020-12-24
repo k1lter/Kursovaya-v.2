@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <initializer_list>
@@ -170,8 +170,8 @@ void AproksimFunction()
 	double Y[QUANTITY_Y] = { 0.1f, 0.4f, 0.9f, 1.6f, 2.5f, 3.6f };
 	Matrix mat_object;
 	BazF basic_f({ 1.1f,2.1f,3.1f,4.1f,5.1f,6.1f });
-	//Вывод изначальной матрицы
-	std::cout << "Изначальная матрица\n";
+	//Р’С‹РІРѕРґ РёР·РЅР°С‡Р°Р»СЊРЅРѕР№ РјР°С‚СЂРёС†С‹
+	std::cout << "РР·РЅР°С‡Р°Р»СЊРЅР°СЏ РјР°С‚СЂРёС†Р°\n";
 	for (unsigned short i(0); i < 3; i++)
 	{
 		for (unsigned short j(0); j < 4; j++)
@@ -191,8 +191,8 @@ void AproksimFunction()
 		J += pow(sigma[i], 2);
 	}
 
-	//Отсюда идет вывод данных
-	std::cout << "\nМатрица после обработки\n";
+	//РћС‚СЃСЋРґР° РёРґРµС‚ РІС‹РІРѕРґ РґР°РЅРЅС‹С…
+	std::cout << "\nРњР°С‚СЂРёС†Р° РїРѕСЃР»Рµ РѕР±СЂР°Р±РѕС‚РєРё\n";
 	for (unsigned short i(0); i < 3; i++)
 	{
 		for (unsigned short j(0); j < 4; j++)
@@ -201,19 +201,19 @@ void AproksimFunction()
 		}
 		std::cout << std::endl;
 	}
-	std::cout << "\nX,Y и Z в результате выполнения метода Гаусса\n";
+	std::cout << "\nX,Y Рё Z РІ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РІС‹РїРѕР»РЅРµРЅРёСЏ РјРµС‚РѕРґР° Р“Р°СѓСЃСЃР°\n";
 	for (unsigned short i(0); i < 3; i++)
 	{
 		std::cout << *(answers + i) << " ";
 	}
 	std::cout << "\n";
-	std::cout << "\nЗначения апрокс. функций\n";
+	std::cout << "\nР—РЅР°С‡РµРЅРёСЏ Р°РїСЂРѕРєСЃ. С„СѓРЅРєС†РёР№\n";
 	for (unsigned short i(0); i < QUANTITY_Y; i++)
 	{
 		std::cout << f[i] << " ";
 	}
 	std::cout << "\n";
-	std::cout << "\nЗначения сигмы\n";
+	std::cout << "\nР—РЅР°С‡РµРЅРёСЏ СЃРёРіРјС‹\n";
 	for (unsigned short i(0); i < QUANTITY_Y; i++)
 	{
 		std::cout << sigma[i] << " ";
